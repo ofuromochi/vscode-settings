@@ -50,4 +50,10 @@
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
+  // エディタ内に新規ターミナルを開く
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.createTerminalEditor",
+    "when": "textInputFocus"
+  },
 ]
