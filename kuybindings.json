@@ -1,0 +1,53 @@
+// 既定値を上書きするには、このファイル内にキーバインドを挿入します
+[
+  // ページの最上部にカーソル移動
+  {
+    "key": "ctrl+w",
+    "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+  // ファイル最上部にカーソル移動
+  {
+    "key": "ctrl+t ctrl+t",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  // ページの最下部にカーソル移動
+  {
+    "key": "ctrl+m",
+    "command": "cursorPageDown",
+    "when": "textInputFocus"
+  },
+  // ファイル最下部にカーソル移動
+  {
+    "key": "ctrl+m ctrl+m",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  // 新規ファイル作成
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  // 現在のエディタを閉じる（Ctrl+; Ctrl+q）
+  {
+    "key": "ctrl+oem_1 ctrl+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  // タブを右に移動
+  {
+    "key": "ctrl+enter",
+    "command": "workbench.action.nextEditor"
+  },
+  // タブを左に移動
+  {
+    "key": " ctrl+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  // 1行削除
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+]
